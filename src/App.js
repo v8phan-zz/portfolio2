@@ -8,7 +8,8 @@ import Projects from "./components/Projects";
 
 const App = () => {
   return (
-    <Box >
+    <Box 
+>
       <Navbar />
       <WhoAmI />
       <Projects />

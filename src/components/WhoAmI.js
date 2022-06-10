@@ -7,7 +7,7 @@ const WhoAmI = () => {
       sx={{
         width: 1,
         height: 1,
-        resizeMode: "cover",
+        alignItems: 'center',
       }}
     >
       My name is Viet Phan. I am programing guy
