@@ -44,8 +44,14 @@ const Projects = () => {
     setExpanded3(!expanded3);
   };
   return (
-    <Box>
-      <Card>
+    <Box
+      sx={{
+      }}
+    >
+      <Typography variant="h3" gutterBottom>
+        Projects
+      </Typography>
+      <Card sx={{ maxWidth: 0.75, p: 1, my: 1 }}>
         <CardHeader title="Funky Monkey Blog" />
         <CardMedia
           component="img"
@@ -74,7 +80,7 @@ const Projects = () => {
           </CardContent>
         </Collapse>
       </Card>
-      <Card>
+      <Card sx={{ maxWidth: 0.75, p: 1, my: 1 }}>
         <CardHeader title="Cocktails" />
         <CardMedia
           component="img"
@@ -102,7 +108,7 @@ const Projects = () => {
           </CardContent>
         </Collapse>
       </Card>
-      <Card>
+      <Card sx={{ maxWidth: 0.75, p: 1, my: 1 }}>
         <CardHeader title="Hittable" />
         <CardMedia
           component="img"
