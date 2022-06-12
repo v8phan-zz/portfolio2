@@ -44,11 +44,8 @@ const Projects = () => {
     setExpanded3(!expanded3);
   };
   return (
-    <Box
-      sx={{
-      }}
-    >
-      <Typography variant="h3" gutterBottom>
+    <Box>
+      <Typography variant="h3" gutterBottom id='projects'>
         Projects
       </Typography>
       <Card sx={{ maxWidth: 0.75, p: 1, my: 1 }}>
