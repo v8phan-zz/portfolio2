@@ -5,7 +5,9 @@ import Box from "@mui/material/Box";
 import Navbar from "./components/Navbar";
 import WhoAmI from "./components/WhoAmI";
 import Projects from "./components/Projects";
-import About from "./components/About"
+import About from "./components/About";
+import ToTop from "./components/ToTop";
+
 
 const App = () => {
   return (
@@ -14,6 +16,7 @@ const App = () => {
       <WhoAmI />
       <About />
       <Projects />
+      {/* <ToTop /> */}
     </Box>
   );
 };

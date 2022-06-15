@@ -24,28 +24,25 @@ const WhoAmI = () => {
   return (
     <Box
       sx={{
-        p: 2,
-        width: 1,
-        height: 1,
-        maxWidth: "fit-content",
-        alignItems: "center",
+        m: 2,
+        '@media (min-width:600px)':{
+          m: 4,
+        }
       }}
     >
       <Paper
         sx={{
-          p: 2,
-          m: 2,
+         p: 2 
         }}
       >
-        <ThemeProvider theme={theme}>
-        <Typography variant="h1" component="div" gutterBottom>
+        <ThemeProvider theme={theme} >
+        <Typography variant="h1" component="div" gutterBottom >
           Howdy, I'm Viet
         </Typography>
-        <Typography variant="h3" gutterBottom>
+        <Typography variant="h3" gutterBottom >
           Aspiring full stack developer
         </Typography>
         </ThemeProvider>
-
       </Paper>
     </Box>
   );

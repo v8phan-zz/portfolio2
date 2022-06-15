@@ -8,8 +8,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 //const pages = ["About", "Projects", "Contact"];
 
@@ -27,7 +26,7 @@ const Navbar = () => {
   return (
     <AppBar position="static">
       <Container>
-        <Toolbar disableGutters>
+        <Toolbar disableGutters id="back-to-top-anchor">
           <Typography
             variant="h6"
             noWrap
@@ -39,16 +38,19 @@ const Navbar = () => {
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".1rem",
-              color: "inherit",
+              color: "white",
               textDecoration: "none",
             }}
           >
             Viet Phan
           </Typography>
+
+          {/* expanded menu */}
+
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
-              aria-label="account of current user"
+              aria-label="sections of portfolio"
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
@@ -75,27 +77,22 @@ const Navbar = () => {
               }}
             >
               <Button
-              onClick={handleCloseNavMenu}
-              sx={{
-                my: 2,
-                color: "white",
-                display: "block",
-                textDecoration: "none",
-              }}
-            >
-              <a href="#abtme">About Me</a>
-            </Button>
-            <Button
-              onClick={handleCloseNavMenu}
-              sx={{
-                my: 2,
-                color: "white",
-                display: "block",
-                textDecoration: "none",
-              }}
-            >
-              <a href="#projects">Projects</a>
-            </Button>
+                onClick={handleCloseNavMenu}
+                sx={{
+                  my: 1,
+                  display: "block",
+                }}
+              >
+                <a href="#abtme">About Me</a>
+              </Button>
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{
+                  display: "block",
+                }}
+              >
+                <a href="#projects">Projects</a>
+              </Button>
               {/* {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
@@ -103,7 +100,15 @@ const Navbar = () => {
               ))} */}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+          <Button
+            href="https://github.com/v8phan"
+            target="_blank"
+            rel="noreferrer"
+            sx={{ display: { xs: "flex", md: "none" }, color: "white" }}
+          >
+            <GitHubIcon />
+          </Button>
+          {/* buttons on full size screen */}
           <Typography
             variant="h5"
             noWrap
@@ -122,28 +127,38 @@ const Navbar = () => {
           >
             Viet Phan
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ my: 2, flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <Button
               onClick={handleCloseNavMenu}
               sx={{
-                my: 2,
-                color: "white",
                 display: "block",
-                textDecoration: "none",
               }}
             >
-              <a href="#abtme">About Me</a>
+              <a href="#abtme" class="no-underline">
+                About Me
+              </a>
             </Button>
             <Button
               onClick={handleCloseNavMenu}
               sx={{
-                my: 2,
-                color: "white",
                 display: "block",
-                textDecoration: "none",
               }}
             >
               <a href="#projects">Projects</a>
+            </Button>
+          </Box>
+          <Box sx={{ flexGrow: 0 }}>
+            <Button
+              href="https://github.com/v8phan"
+              target="_blank"
+              rel="noreferrer"
+              anchorOrigin={{
+                vertical: "top",
+                horizontal: "right",
+              }}
+              sx={{ display: { xs: "none", md: "flex" }, color: "white" }}
+            >
+              <GitHubIcon />
             </Button>
           </Box>
         </Toolbar>
