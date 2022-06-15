@@ -25,7 +25,7 @@ const About = () => {
           <Typography
             id="abtme"
             sx={{
-              p: 2,
+              p: 4,
               alignItems: 'center',
             }}
           >
