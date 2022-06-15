@@ -38,8 +38,6 @@ const About = () => {
             developer that I can be. I read a lot and I got the best Feng in
             Austin.
           </Typography>
-
-
           <Box
             component="img"
             alt="handsome guy"
