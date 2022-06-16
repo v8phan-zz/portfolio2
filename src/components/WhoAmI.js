@@ -27,14 +27,13 @@ const WhoAmI = () => {
         m: 2,
         '@media (min-width:600px)':{
           m: 4,
-        }
+        },
+        height: "100vw",
+        p: 2,
+        textAlign: "center",
+        position: "relative",
       }}
     >
-      <Paper
-        sx={{
-         p: 2 
-        }}
-      >
         <ThemeProvider theme={theme} >
         <Typography variant="h1" component="div" gutterBottom >
           Howdy, I'm Viet
@@ -43,7 +42,6 @@ const WhoAmI = () => {
           Aspiring full stack developer
         </Typography>
         </ThemeProvider>
-      </Paper>
     </Box>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import { styled } from "@mui/material/styles";
 import Stack from "@mui/material/Stack";
+import Divider from "@mui/material/Divider";
 
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
@@ -23,7 +24,9 @@ const Projects = () => {
     <Stack
       direction={{ xs: "column", sm: "row" }}
       spacing={{ xs: 1, sm: 2, md: 4 }}
-      justifyContent="space-between"
+      divider={
+        <Divider orientation={{ xs: "horizontal", sm: "vertical" }} flexItem />
+      }
       sx={{ m: 2, "@media (min-width:600px)": { m: 4 } }}
     >
       <Card
