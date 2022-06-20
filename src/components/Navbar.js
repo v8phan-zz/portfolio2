@@ -10,6 +10,7 @@ import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 //const pages = ["About", "Projects", "Contact"];
 
@@ -117,14 +118,24 @@ const Navbar = () => {
           >
             <GitHubIcon />
           </Button>
-          {/* buttons on full size screen */}
+          <Button
+            href="https://www.linkedin.com/in/viet-phan-889069147"
+            target="_blank"
+            rel="noreferrer"
+            sx={{ display: { xs: "flex", md: "none" }, color: "white" }}
+          >
+            <LinkedInIcon />
+          </Button>
+
+{/* mobile */}
+
           <Typography
             variant="h5"
             noWrap
             component="a"
             href=""
             sx={{
-              mr: 2,
+              ml: 2,
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
               fontFamily: "Abhaya Libre",
@@ -168,7 +179,7 @@ const Navbar = () => {
               </Link>
             </Button>
           </Box>
-          <Box sx={{ flexGrow: 0 }}>
+          <Box sx={{ display: 'flex' }}>
             <Button
               href="https://github.com/v8phan"
               target="_blank"
@@ -180,6 +191,14 @@ const Navbar = () => {
               sx={{ display: { xs: "none", md: "flex" }, color: "white" }}
             >
               <GitHubIcon />
+            </Button>
+            <Button
+              href="https://www.linkedin.com/in/viet-phan-889069147"
+              target="_blank"
+              rel="noreferrer"
+              sx={{ display: { xs: "none", md: "flex" }, color: "white" }}
+            >
+              <LinkedInIcon />
             </Button>
           </Box>
         </Toolbar>
