@@ -1,6 +1,7 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
+import Link from '@mui/material/Link';
 import Button from "@mui/material/Button";
 import cv from "../pdfs/Viet_Phan_resume.pdf";
 
@@ -18,7 +19,6 @@ const WhoAmI = () => {
         component="div"
         fontFamily={'Playfair Display'}
         gutterBottom
-
         sx={{
           
           fontSize: "2.4rem",
@@ -48,16 +48,17 @@ const WhoAmI = () => {
             m: 4,
           }}
         >
-          <a href={cv} target="_blank" rel="noreferrer">
+          <Link href={cv} target="_blank" rel="noreferrer">
             <Typography
+                    fontFamily={'Open Sans'}
+            variant='h6'
               sx={{
                 color: "white",
-                textDecoration: "none!important",
               }}
             >
               VIEW RESUME
             </Typography>
-          </a>
+          </Link>
         </Button>
     </Container>
   );

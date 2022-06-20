@@ -2,6 +2,7 @@ import React from "react";
 import AppBar from "@mui/material/AppBar";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
+import Link from "@mui/material/Link";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Box from "@mui/material/Box";
@@ -35,7 +36,7 @@ const Navbar = () => {
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
-              fontFamily: 'Abhaya Libre',
+              fontFamily: "Abhaya Libre",
               fontWeight: 400,
               letterSpacing: ".1rem",
               color: "white",
@@ -83,7 +84,9 @@ const Navbar = () => {
                   display: "block",
                 }}
               >
-                <a href="#abtme" >About Me</a>
+                <Link href="#abtme" underline="none" fontFamily={"Open Sans"}>
+                  About Me
+                </Link>
               </Button>
               <Button
                 onClick={handleCloseNavMenu}
@@ -91,7 +94,13 @@ const Navbar = () => {
                   display: "block",
                 }}
               >
-                <a href="#projects">Projects</a>
+                <Link
+                  href="#projects"
+                  underline="none"
+                  fontFamily={"Open Sans"}
+                >
+                  Projects
+                </Link>
               </Button>
               {/* {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
@@ -118,7 +127,7 @@ const Navbar = () => {
               mr: 2,
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
-              fontFamily: 'Abhaya Libre',
+              fontFamily: "Abhaya Libre",
               fontWeight: 400,
               letterSpacing: ".1rem",
               color: "inherit",
@@ -134,9 +143,14 @@ const Navbar = () => {
                 display: "block",
               }}
             >
-              <a href="#abtme" class="no-underline">
+              <Link
+                href="#abtme"
+                underline="none"
+                color="white"
+                fontFamily={"Open Sans"}
+              >
                 About Me
-              </a>
+              </Link>
             </Button>
             <Button
               onClick={handleCloseNavMenu}
@@ -144,7 +158,14 @@ const Navbar = () => {
                 display: "block",
               }}
             >
-              <a href="#projects">Projects</a>
+              <Link
+                href="#projects"
+                underline="none"
+                color="white"
+                fontFamily={"Open Sans"}
+              >
+                Projects
+              </Link>
             </Button>
           </Box>
           <Box sx={{ flexGrow: 0 }}>
