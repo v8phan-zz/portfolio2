@@ -35,11 +35,11 @@ const Navbar = () => {
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
+              fontFamily: 'Abhaya Libre',
+              fontWeight: 400,
               letterSpacing: ".1rem",
               color: "white",
-              textDecoration: "none",
+              textDecoration: "none!important",
             }}
           >
             Viet Phan
@@ -83,7 +83,7 @@ const Navbar = () => {
                   display: "block",
                 }}
               >
-                <a href="#abtme">About Me</a>
+                <a href="#abtme" >About Me</a>
               </Button>
               <Button
                 onClick={handleCloseNavMenu}
@@ -118,8 +118,8 @@ const Navbar = () => {
               mr: 2,
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
+              fontFamily: 'Abhaya Libre',
+              fontWeight: 400,
               letterSpacing: ".1rem",
               color: "inherit",
               textDecoration: "none",

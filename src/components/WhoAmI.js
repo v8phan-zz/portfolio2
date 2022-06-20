@@ -1,48 +1,65 @@
 import React from "react";
-import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-
-const theme = createTheme();
-
-theme.typography.h1 = {
-  fontSize: '2.4rem',
-  '@media (min-width:600px)': {
-    fontSize: '8.0rem',
-  }
-};
-
-theme.typography.h3 = {
-  fontSize: '1.4rem',
-  '@media (min-width:600px)': {
-    fontSize: '4.0rem',
-  }
-};
+import Container from "@mui/material/Container";
+import Button from "@mui/material/Button";
+import cv from "../pdfs/Viet_Phan_resume.pdf";
 
 const WhoAmI = () => {
   return (
-    <Box
+    <Container
       sx={{
-        m: 2,
-        '@media (min-width:600px)':{
-          m: 4,
-        },
-        height: "100vw",
-        p: 2,
+        height: "100vh",
         textAlign: "center",
-        position: "relative",
+        pt: 15,
       }}
     >
-        <ThemeProvider theme={theme} >
-        <Typography variant="h1" component="div" gutterBottom >
-          Howdy, I'm Viet
-        </Typography>
-        <Typography variant="h3" gutterBottom >
-          Aspiring full stack developer
-        </Typography>
-        </ThemeProvider>
-    </Box>
+      <Typography
+        variant="h1"
+        component="div"
+        fontFamily={'Playfair Display'}
+        gutterBottom
+
+        sx={{
+          
+          fontSize: "2.4rem",
+          "@media (min-width:600px)": {
+            fontSize: "8.0rem",
+          },
+        }}
+      >
+        Howdy, I'm Viet
+      </Typography>
+      <Typography
+        variant="h3"
+        fontFamily={'Montserrat'}
+        gutterBottom
+        sx={{
+          fontSize: "1.2rem",
+          "@media (min-width:600px)": {
+            fontSize: "4.0rem",
+          },
+        }}
+      >
+        Aspiring full stack developer
+      </Typography>
+      <Button
+          variant="contained"
+          sx={{
+            m: 4,
+          }}
+        >
+          <a href={cv} target="_blank" rel="noreferrer">
+            <Typography
+              sx={{
+                color: "white",
+                textDecoration: "none!important",
+              }}
+            >
+              VIEW RESUME
+            </Typography>
+          </a>
+        </Button>
+    </Container>
   );
 };
 
