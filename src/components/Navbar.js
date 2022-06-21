@@ -90,7 +90,7 @@ const Navbar = () => {
               <Button
                 onClick={handleCloseNavMenu}
                 sx={{
-                  display: "block", 
+                  display: "block",
                 }}
               >
                 <Link
@@ -140,7 +140,7 @@ const Navbar = () => {
               fontWeight: 400,
               letterSpacing: ".1rem",
               color: "inherit",
-              textDecoration: "none", 
+              textDecoration: "none",
             }}
           >
             Viet Phan
@@ -149,7 +149,8 @@ const Navbar = () => {
             <Button
               onClick={handleCloseNavMenu}
               sx={{
-                display: "block",                 "&:hover": {
+                display: "block",
+                "&:hover": {
                   backgroundColor: "darkblue",
                 },
               }}
@@ -166,7 +167,8 @@ const Navbar = () => {
             <Button
               onClick={handleCloseNavMenu}
               sx={{
-                display: "block",                 "&:hover": {
+                display: "block",
+                "&:hover": {
                   backgroundColor: "darkblue",
                 },
               }}
@@ -190,9 +192,13 @@ const Navbar = () => {
                 vertical: "top",
                 horizontal: "right",
               }}
-              sx={{ display: { xs: "none", md: "flex" }, color: "white",                 "&:hover": {
-                backgroundColor: "darkblue",
-              }, }}
+              sx={{
+                display: { xs: "none", md: "flex" },
+                color: "white",
+                "&:hover": {
+                  backgroundColor: "darkblue",
+                },
+              }}
             >
               <GitHubIcon />
             </Button>

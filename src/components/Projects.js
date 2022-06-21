@@ -16,7 +16,12 @@ import hittable from "../images/hittable.JPG";
 const Projects = () => {
   return (
     <Container id="projects">
-      <Typography variant="h3" align="center" fontFamily={'Abhaya Libre'} sx={{ mb: 4 }}>
+      <Typography
+        variant="h3"
+        align="center"
+        fontFamily={"Abhaya Libre"}
+        sx={{ mb: 4 }}
+      >
         Projects
       </Typography>
       <Stack
@@ -38,7 +43,11 @@ const Projects = () => {
             },
           }}
         >
-          <CardActionArea>
+          <CardActionArea
+            href="https://github.com/v8phan/monfront-amplify"
+            target="_blank"
+            rel="noreferrer"
+          >
             <CardMedia component="img" image={blogsample} />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -58,6 +67,11 @@ const Projects = () => {
               href="https://github.com/v8phan/monfront-amplify"
               target="_blank"
               rel="noreferrer"
+              sx={{
+                "&:hover": {
+                  backgroundColor: "lightblue",
+                },
+              }}
             >
               <GitHubIcon />
             </Button>
@@ -72,7 +86,11 @@ const Projects = () => {
             },
           }}
         >
-          <CardActionArea>
+          <CardActionArea
+            href="https://github.com/v8phan/cocktails"
+            target="_blank"
+            rel="noreferrer"
+          >
             <CardMedia component="img" image={cocktails} />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -91,6 +109,11 @@ const Projects = () => {
               href="https://github.com/v8phan/cocktails"
               target="_blank"
               rel="noreferrer"
+              sx={{
+                "&:hover": {
+                  backgroundColor: "lightblue",
+                },
+              }}
             >
               <GitHubIcon />
             </Button>
@@ -105,7 +128,11 @@ const Projects = () => {
             },
           }}
         >
-          <CardActionArea>
+          <CardActionArea
+            href="https://github.com/v8phan/hittable"
+            target="_blank"
+            rel="noreferrer"
+          >
             <CardMedia component="img" image={hittable} />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -124,6 +151,11 @@ const Projects = () => {
               href="https://github.com/v8phan/hittable"
               target="_blank"
               rel="noreferrer"
+              sx={{
+                "&:hover": {
+                  backgroundColor: "lightblue",
+                },
+              }}
             >
               <GitHubIcon />
             </Button>
