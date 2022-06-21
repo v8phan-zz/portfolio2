@@ -78,7 +78,7 @@ const About = () => {
               stuff my brain with as much as I possibly can. I've created
               projects using frontend technologies such as the React framework
               and have also worked with APIs and other backend technologies such
-              as Node Express including creating and interacting with databases
+              as Node/Express including creating and interacting with databases
               via SQL. My objective is simply to be the most knowledgable and
               well rounded developer that I can be. When not programming, I
               enjoy tennis and reading and fighting games.
