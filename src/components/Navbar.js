@@ -26,9 +26,9 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" >
       <Container>
-        <Toolbar disableGutters id="back-to-top-anchor">
+        <Toolbar disableGutters id="back-to-top-anchor" >
           <Typography
             variant="h6"
             noWrap

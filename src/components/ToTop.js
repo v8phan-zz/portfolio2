@@ -15,7 +15,6 @@ const ScrollTop = (props) => {
   const { children } = props;
 
   const trigger = useScrollTrigger({
-    target: window ? window() : undefined,
     disableHysteresis: true,
     threshold: 100,
   });
@@ -48,6 +47,8 @@ const ScrollTop = (props) => {
 const ToTop = (props) => {
   return (
     <React.Fragment>
+            <CssBaseline />
+
       <ScrollTop {...props}>
         <Fab size="small" aria-label="scroll back to top">
           <KeyboardArrowUpIcon />

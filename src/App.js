@@ -16,7 +16,7 @@ const App = () => {
       <WhoAmI />
       <About />
       <Projects />
-      {/* <ToTop /> */}
+      <ToTop /> 
     </Box>
   );
 };
