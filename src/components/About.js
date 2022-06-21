@@ -16,6 +16,7 @@ import cv from "../pdfs/Viet_Phan_resume.pdf";
 const About = () => {
   const skills = [
     "React",
+    "Javascript",
     "Express",
     "Node",
     "Tekken",
@@ -31,10 +32,11 @@ const About = () => {
 
   return (
     <Container sx={{ mb: 15 }} id="abtme">
+      <Typography variant="h3" align="center" fontFamily={"Abhaya Libre"}>
+        About me
+      </Typography>
 
-      <Typography variant="h3" align="center" fontFamily={'Abhaya Libre'}>About me</Typography>
-
-      <Grid  container spacing={0}>
+      <Grid container spacing={0}>
         {/* avatar */}
         <Grid item xs={12} md={5} sx={{ mb: 1 }}>
           <Box
@@ -60,11 +62,10 @@ const About = () => {
           display="flex"
           justifyContent="center"
         >
-
           <Box>
             <Typography
-            fontFamily={'Open Sans'}
-            fontSize="20px"
+              fontFamily={"Open Sans"}
+              fontSize="20px"
               sx={{
                 m: 4,
                 "@media (min-width:600px)": {
@@ -72,26 +73,30 @@ const About = () => {
                 },
               }}
             >
-              My name is Viet Phan, a graduate of the University of Texas based
-              in Austin, Texas. I am a self taught programmer trying to learn as
-              much as I possibly can. I have created projects with the React
-              framework and am able to utilize APIs and work with backend
-              technologies such as Node Express and have created and used
-              databases with SQL. My objective is simply to be the most
-              knowledgable and well rounded developer that I can be. I read a
-              lot and I got the best Feng in Austin.
+              My name is Viet Phan, and I'm self taught programmer based in
+              Austin, Texas. I am a voracious learner and every day I try to
+              stuff my brain with as much as I possibly can. I've created
+              projects using frontend technologies such as the React framework
+              and have also worked with APIs and other backend technologies such
+              as Node Express including creating and interacting with databases
+              via SQL. My objective is simply to be the most knowledgable and
+              well rounded developer that I can be. When not programming, I
+              enjoy tennis and reading and fighting games.
             </Typography>
           </Box>
 
           <Container sx={{ display: "flex", flexWrap: "wrap" }}>
             {skills.map((skill) => (
-              <Grid >
+              <Grid>
                 <Paper
                   elevation={10}
                   sx={{
                     marginRight: "10px",
                     marginBottom: "10px",
                     padding: "13px",
+                    "&:hover": {
+                      backgroundColor: "lightblue",
+                    },
                   }}
                 >
                   <Typography align="center" sx={{}}>
@@ -101,11 +106,8 @@ const About = () => {
               </Grid>
             ))}
           </Container>
-
         </Grid>
-
       </Grid>
-
     </Container>
   );
 };

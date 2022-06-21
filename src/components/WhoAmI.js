@@ -46,9 +46,11 @@ const WhoAmI = () => {
           variant="contained"
           sx={{
             m: 4,
-          }}
+            "&:hover": {
+              backgroundColor: "darkblue",
+            }          }}
         >
-          <Link href={cv} target="_blank" rel="noreferrer">
+          <Link href={cv} target="_blank" rel="noreferrer" underline="none">
             <Typography
                     fontFamily={'Open Sans'}
             variant='h6'

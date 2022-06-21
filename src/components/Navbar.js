@@ -10,9 +10,7 @@ import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-
-//const pages = ["About", "Projects", "Contact"];
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -26,9 +24,9 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="static" >
+    <AppBar position="static" sx={{ backgroundColor: "#0077c2" }}>
       <Container>
-        <Toolbar disableGutters id="back-to-top-anchor" >
+        <Toolbar disableGutters id="back-to-top-anchor">
           <Typography
             variant="h6"
             noWrap
@@ -92,7 +90,7 @@ const Navbar = () => {
               <Button
                 onClick={handleCloseNavMenu}
                 sx={{
-                  display: "block",
+                  display: "block", 
                 }}
               >
                 <Link
@@ -127,7 +125,7 @@ const Navbar = () => {
             <LinkedInIcon />
           </Button>
 
-{/* mobile */}
+          {/* mobile */}
 
           <Typography
             variant="h5"
@@ -142,7 +140,7 @@ const Navbar = () => {
               fontWeight: 400,
               letterSpacing: ".1rem",
               color: "inherit",
-              textDecoration: "none",
+              textDecoration: "none", 
             }}
           >
             Viet Phan
@@ -151,7 +149,9 @@ const Navbar = () => {
             <Button
               onClick={handleCloseNavMenu}
               sx={{
-                display: "block",
+                display: "block",                 "&:hover": {
+                  backgroundColor: "darkblue",
+                },
               }}
             >
               <Link
@@ -166,7 +166,9 @@ const Navbar = () => {
             <Button
               onClick={handleCloseNavMenu}
               sx={{
-                display: "block",
+                display: "block",                 "&:hover": {
+                  backgroundColor: "darkblue",
+                },
               }}
             >
               <Link
@@ -179,7 +181,7 @@ const Navbar = () => {
               </Link>
             </Button>
           </Box>
-          <Box sx={{ display: 'flex' }}>
+          <Box sx={{ display: "flex" }}>
             <Button
               href="https://github.com/v8phan"
               target="_blank"
@@ -188,7 +190,9 @@ const Navbar = () => {
                 vertical: "top",
                 horizontal: "right",
               }}
-              sx={{ display: { xs: "none", md: "flex" }, color: "white" }}
+              sx={{ display: { xs: "none", md: "flex" }, color: "white",                 "&:hover": {
+                backgroundColor: "darkblue",
+              }, }}
             >
               <GitHubIcon />
             </Button>
@@ -196,7 +200,13 @@ const Navbar = () => {
               href="https://www.linkedin.com/in/viet-phan-889069147"
               target="_blank"
               rel="noreferrer"
-              sx={{ display: { xs: "none", md: "flex" }, color: "white" }}
+              sx={{
+                display: { xs: "none", md: "flex" },
+                color: "white",
+                "&:hover": {
+                  backgroundColor: "darkblue",
+                },
+              }}
             >
               <LinkedInIcon />
             </Button>
