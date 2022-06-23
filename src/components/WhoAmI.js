@@ -40,7 +40,7 @@ const WhoAmI = () => {
           },
         }}
       >
-        Aspiring full stack developer
+        Aspiring web developer
       </Typography>
       <Button
           variant="contained"
